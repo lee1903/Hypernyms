@@ -50,4 +50,4 @@ while index < len(list_char):
 result = result[:-1]
 result = result.replace("_", " ")
 
-pprint(result)
+print(result)
