@@ -3,8 +3,8 @@ import nltk
 from nltk.corpus import wordnet as wn
 from nltk.tree import *
 
-word = wn.synset('.n.01')
-hyp = lambda s:s.hypernyms()
+word = wn.synset('dog.n.01')
+hyp = lambda s:s.hyponyms()
 tree = word.tree(hyp)
 
 from pprint import pprint
